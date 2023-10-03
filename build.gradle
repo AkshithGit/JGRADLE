@@ -9,6 +9,32 @@ version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
+//apply plugin: 'maven-publish'
+//
+//publishing {
+//    publications {
+//        maven(MavenPublication) {
+//            artifact("build/libs/JGRADLE-$version"+".jar") {
+//                extension 'jar'
+//            }
+//        }
+//    }
+//
+//    repositories {
+//        maven {
+//            name 'nexus'
+//            url "http://ip:8081/repository/maven-snapshots/"
+//            allowInsecureProtocol = true
+//            credentials {
+//                username project.repoUser
+//                password project.repoPassword
+//            }
+//        }
+//    }
+//}
+
+
+
 repositories {
     mavenCentral()
 }
